@@ -1,0 +1,15 @@
+#nav-menu{
+  height:100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background-color: orangered;
+}
+#nav-menu>a{
+  display: block;
+  padding:2px;
+  text-decoration: none;
+  color:whitesmoke;
+  font-size: 40px;
+  margin:20px;
+}
