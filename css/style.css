@@ -44,3 +44,39 @@
 .highlight{
     color: #df6c0e;
 }
+
+.welcome{
+    background-image: url("../images/welcome.jpg");
+    height: 700px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+.box{
+   padding: 25px;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: white;
+    opacity: 0.5;
+    display: none;
+    padding-top: 20%;
+    font-size: 50px;
+}
+
+.footer{
+    background-color: #2d2652;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.footer > p{
+    padding-top: 10px;
+}
