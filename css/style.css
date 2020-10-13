@@ -1,0 +1,46 @@
+.header{
+     background-color: #2c2a2a;
+     color: #ffffff;
+     padding-top: 30px;
+     min-height: 90px;
+ }
+ .header > h1 {
+     padding: 0;
+     margin: 0;
+ }
+
+.header > nav > ul > li >a{
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.header a:hover{
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.header > nav > ul{
+    padding:0;
+    margin:0;
+}
+
+.header > nav >ul > li{
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+.header > div {
+    float:left;
+}
+
+.header > nav {
+    float: right;
+    margin-top: 20px;
+}
+
+.highlight{
+    color: #df6c0e;
+}
