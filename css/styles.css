@@ -1,0 +1,14 @@
+.col{
+    display: flex;
+    top: 6px;  
+}
+
+.column{
+    position: absolute;
+    padding-left: 250px;
+    top: 50px;
+}
+h2{
+    padding-left: 90px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
