@@ -39,12 +39,7 @@ body{
 .menu-nav{
   top: 15%;
 }
-.menu{
-  position: absolute;
-  top: 15%;
-  margin-left: 25%;
-  width: auto;
-}
+
 .hide{
   display: none;
 }
@@ -54,4 +49,10 @@ body{
   height: 80%;
   width: 70%;
   padding: 50px;
+}
+.menu{
+  position: absolute;
+  top: 15%;
+  margin-left: 25%;
+  width: auto;
 }
