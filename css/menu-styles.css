@@ -10,43 +10,6 @@ body{
   height: 15%;
   
 }
-.header > h1 {
-  padding: 0;
-  margin: 0;
-}
-
-.header > nav > ul > li >a{
- color: #ffffff;
- text-decoration: none;
- text-transform: uppercase;
- font-size: 16px;
-}
-
-.header a:hover{
- color: #ffffff;
- font-weight: bold;
-}
-
-.header > nav > ul{
- padding:0;
- margin:0;
-}
-
-.header > nav >ul > li{
- float: left;
- display: inline;
- padding: 0 20px 0 20px;
-}
-
-.header > div {
- float:left;
-}
-
-.header > nav {
- float: right;
- margin-top: 20px;
-}
-
 .highlight{
  color: #df6c0e;
 }
@@ -86,5 +49,9 @@ body{
   display: none;
 }
 .order-box{
-  size: 70%;
+  top: 10%;
+  left: 15%;
+  height: 80%;
+  width: 70%;
+  padding: 50px;
 }
