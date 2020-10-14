@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .col{
     display: flex;
     top: 6px;  
@@ -11,4 +12,34 @@
 h2{
     padding-left: 90px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+=======
+.menu-nav{
+  position: fixed;
+  height: 100%;
+  max-width: 25%;
+  min-width: 25%;
+}
+.menu-tab{
+  font-size: 25px;
+}
+.item-title{
+  margin-bottom: 0.75rem;
+}
+.item-img{
+  height: 100%;
+  max-height: 250px;
+  width: auto;
+}
+.section-menu>hr{
+  background: darkred;
+  height: 3px;
+}
+.menu{
+  position: absolute;
+  left: 25%;
+  width: auto;
+}
+.hide{
+  display: none;
+>>>>>>> 395e3edbaca28ebeeff4e2cb4de0411faa8d5a9e
 }
