@@ -85,3 +85,6 @@ body{
 .hide{
   display: none;
 }
+.order-box{
+  size: 70%;
+}
