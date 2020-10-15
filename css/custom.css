@@ -2,5 +2,7 @@ body{
     background-color: bisque;
 }
 .form{
-    padding-left: 10px;
+    padding-left: 30px;
+    background-image: url('/images/background.jpg');
+    background-size: cover;
 }
