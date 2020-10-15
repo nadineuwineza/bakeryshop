@@ -1,56 +1,59 @@
 <!DOCTYPE html>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="custom-inf/custom.html">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="custom-inf/custom.html">
+  <link rel="stylesheet" href="/css/custom.css">
 </head>
+
 <body>
-    <div>
-        <h1>custom information</h1>
+  <div>
+    <h1>Custom Information</h1>
+  </div>
+  <div class="form">
+
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+      <label class="form-check-label" for="exampleRadios1">
+        Deliver
+      </label>
     </div>
-    <div class="form">
-        
-        <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-            <label class="form-check-label" for="exampleRadios1">
-            deliver
-            </label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-            <label class="form-check-label" for="inlineCheckbox1">gasabo</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-            <label class="form-check-label" for="inlineCheckbox2">kicukiro</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-            <label class="form-check-label" for="inlineCheckbox2">nyarugenge</label>
-          </div>
-          <div>
-            <label class="labelE">
-                <textarea class="textarea" rows="4" cols="50">
-                     type your location here...
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+      <label class="form-check-label" for="exampleRadios2">
+        Pick up
+      </label><br>
+      <h6>Choose your location</h6>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+        <label class="form-check-label" for="inlineCheckbox1">Gasabo</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+        <label class="form-check-label" for="inlineCheckbox2">Kicukiro</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+        <label class="form-check-label" for="inlineCheckbox2">Nyarugenge</label>
+      </div>
+      <div>
+        <label class="labelE">
+          <textarea class="textarea" rows="4" cols="50">
+type your location here...
                     </textarea>
-        </div>
-        </form>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-            <label class="form-check-label" for="exampleRadios2">
-              pick up
-            </label>
-            <br>
-            <br>
-            <br>
-            <div>
-                <button type="submit" class="btn btn-danger" onclick="submit();">order</button>
-            </div>
-            
-          </div>
+      </div>
+      </form>
+
+      <div>
+        <button type="submit" class="btn btn-danger" onclick="submit();">Order</button>
+      </div>
+
+    </div>
 </body>
+
 </html>

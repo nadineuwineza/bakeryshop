@@ -12,7 +12,7 @@
 h2{
     padding-left: 90px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-=======
+}
 .menu-nav{
   position: fixed;
   height: 100%;
@@ -41,5 +41,4 @@ h2{
 }
 .hide{
   display: none;
->>>>>>> 395e3edbaca28ebeeff4e2cb4de0411faa8d5a9e
 }
