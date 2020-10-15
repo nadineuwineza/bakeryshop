@@ -1,6 +1,7 @@
 body{
-  background-color: #7e4d4d;
-  color: #ffffff;
+  background-color: #ffffff;;
+  color: #000000;
+
 }
 .header{
   position: fixed;
@@ -10,43 +11,6 @@ body{
   height: 15%;
   
 }
-.header > h1 {
-  padding: 0;
-  margin: 0;
-}
-
-.header > nav > ul > li >a{
- color: #ffffff;
- text-decoration: none;
- text-transform: uppercase;
- font-size: 16px;
-}
-
-.header a:hover{
- color: #ffffff;
- font-weight: bold;
-}
-
-.header > nav > ul{
- padding:0;
- margin:0;
-}
-
-.header > nav >ul > li{
- float: left;
- display: inline;
- padding: 0 20px 0 20px;
-}
-
-.header > div {
- float:left;
-}
-
-.header > nav {
- float: right;
- margin-top: 20px;
-}
-
 .highlight{
  color: #df6c0e;
 }
@@ -70,21 +34,26 @@ body{
   width: auto;
 }
 .section-menu>hr{
-  background: darkred;
+  background: #df6c0e;
   height: 3px;
 }
 .menu-nav{
   top: 15%;
+}
+
+.hide{
+  display: none;
+}
+.order-box{
+  top: 10%;
+  left: 15%;
+  height: 80%;
+  width: 70%;
+  padding: 50px;
 }
 .menu{
   position: absolute;
   top: 15%;
   margin-left: 25%;
   width: auto;
-}
-.hide{
-  display: none;
-}
-.order-box{
-  size: 70%;
 }
