@@ -1,6 +1,7 @@
 body{
-  background-color: #7e4d4d;
-  color: #ffffff;
+  background-color: #ffffff;;
+  color: #000000;
+
 }
 .header{
   position: fixed;
@@ -33,7 +34,7 @@ body{
   width: auto;
 }
 .section-menu>hr{
-  background: darkred;
+  background: #df6c0e;
   height: 3px;
 }
 .menu-nav{
