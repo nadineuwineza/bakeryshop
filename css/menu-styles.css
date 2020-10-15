@@ -1,5 +1,5 @@
 body{
-  background-color: #7e4d4d;
+  background-color: #2d2652;
   color: #ffffff;
 }
 .header{
@@ -33,7 +33,7 @@ body{
   width: auto;
 }
 .section-menu>hr{
-  background: darkred;
+  background: white;
   height: 3px;
 }
 .menu-nav{
