@@ -29,7 +29,6 @@ var shoppingCart = (function() {
   }
   
 
-
   // =============================
   // Public methods and propeties
   // =============================
@@ -207,4 +206,3 @@ $('.show-cart').on("change", ".item-count", function(event) {
 });
 
 displayCart();
-
