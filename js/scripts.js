@@ -1,3 +1,10 @@
+
+$(document).ready(function() {
+  $("textarea#t-area").keypress(function (e) {
+    alert("Working");
+  });
+});
+
 // ************************************************
 // Shopping Cart API
 // ************************************************
@@ -206,6 +213,7 @@ $('.show-cart').on("change", ".item-count", function(event) {
 
 displayCart();
 
+
 $("#deliver-check").click(function () {
   if ($(this).is(":checked")) {
       $("#deliver").show();
@@ -213,3 +221,4 @@ $("#deliver-check").click(function () {
       $("#deliver").hide();
   }
 });
+
