@@ -64,3 +64,6 @@ body {
 .link-items{
   float: right;
 }
+.navbarNav>a{
+  color: #df6c0e;
+}
