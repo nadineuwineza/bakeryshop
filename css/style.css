@@ -8,7 +8,7 @@
 
 .welcome{
     background-image: url("../images/welcome.jpg");
-    height: 437px;
+    height: 720px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -41,7 +41,7 @@
 }
 
 .footer{
-    background-color: #2d2652;
+    background-color: #3d3c44;
     height: 50px;
     font-size: 20px;
     font-weight: bold;
@@ -53,7 +53,7 @@
 
 .contact-us{
    background-image: url("../images/breads.jpg");
-   height: 350px;
+   height: 380px;
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
