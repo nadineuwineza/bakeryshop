@@ -1,17 +1,7 @@
-// $(document).ready(function(){
-//     $(".btn btn-dark").click(function () {
-//         alert('Thank you!')
-//     });
-// });
-
-
 function myFunction() {
   var text;
-  if (confirm("Thank you for contacting us! ")) {
-    text = "Thank you for contacting us!";
+  if (confirm("Thank you for contacting us! Consider your order as done!")) {
+    text = "Thank you! ";
   } 
-//   else {
-//     txt = "You pressed Cancel!";
-//   }
   document.getElementById("demo").innerHTML = text;
 }
