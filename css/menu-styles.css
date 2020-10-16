@@ -55,3 +55,12 @@ body {
   padding-top: 15%;
   padding-left: 15%;
 }
+.footer{
+  background-color: #2d2652;
+  height: 50px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.link-items{
+  float: right;
+}
