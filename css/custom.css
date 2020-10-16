@@ -1,12 +1,17 @@
 body{
-    background-color: bisque;
+    padding-top: 10%;
+    background: url('../images/bread1.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     font-family: 'Open Sans Condensed', sans-serif;
 }
 .form{
     padding-left: 30px;
-    background-image: url('/images/Opera\ Cake.jpg');
     background-size: cover;
     background-position: 1px;
+    font-size: 16px;
 }
 .form ::placeholder{
     color: black;
@@ -34,4 +39,16 @@ padding-bottom: 5px;
 #area{
     background: transparent;
 }
-
+#header{
+    background-color: #2c2a2a;
+    color: #ffffff;
+    padding-top: 15px;
+    height: 15%;
+  }
+  #header a:hover{
+    color: #ffffff;
+    font-weight: bold;
+}
+.highlight{
+    color: #df6c0e;
+   }
