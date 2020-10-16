@@ -7,95 +7,69 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="custom-inf/custom.html">
+  <link rel="stylesheet" href="/custom.html">
   <link rel="stylesheet" href="/css/custom.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
-<p>Choose the quantity</p>
-  <div class="form-group row">
-    <label for="cakes" class="col-2 col-form-label">how many cakes:</label>
-    <div class="col-10">
-      <input class="form-control" type="number" value="1" id="cake-number">
-    </div>
-  </div>
-
-  <div class="form-group row">
-    <label for="pies-number" class="col-2 col-form-label">how many pies:</label>
-    <div class="col-10">
-      <input class="form-control" type="number" value="1" id="pies-number">
-    </div>
-  </div>
-
-  <div class="form-group row">
-    <label for="breads-number" class="col-2 col-form-label">how many breads:</label>
-    <div class="col-10">
-      <input class="form-control" type="number" value="1" id="breads-number">
-    </div>
-  </div>
-
-  <div class="form-group row">
-    <label for="snacks-number" class="col-2 col-form-label">how many snacks:</label>
-    <div class="col-10">
-      <input class="form-control" type="number" value="1" id="snacks-number">
-    </div>
-  </div>
-
-  <div class="form-group row">
-    <label for="donuts-number" class="col-2 col-form-label">how many donuts:</label>
-    <div class="col-10">
-      <input class="form-control" type="number" value="1" id="donuts-number">
-    </div>
-  </div>
-
-
-
-
-
-
-  <div>
-    <h1>Custom Information</h1>
-  </div>
   <div class="form">
+    <div class="customer">
+    <h2>Customer Information</h2>
+  </div>
+    <label for="fname">Your names</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your names...">
+      <input type="text" id="phone" name="phonenumber" placeholder="Your phone number...">
+    <h3>Select your location</h3>
+    <div id="deliver">
+      <form class="form-inline">
+        <div class="form-group">
+          <select class="form-control mb-2 mr-sm-2" id="area">
+            <option selected>Select you area...</option>
+            <option>City Center</option>
+            <option>Gacuriro</option>
+            <option>Gikondo</option>
+            <option>Kagarama</option>
+            <option>Kimironko</option>
+            <option>Remera</option>
+            <option>Gisozi</option>
+            <option>Kabeza</option>
+            <option>Kabuga</option>
+            <option>Kacyiru</option>
+            <option>Kagugu</option>
+            <option>Kanombe</option>
+            <option>Kibagabaga</option>
+            <option>Kimihurura</option>
+            <option>Nyabugogo</option>
+            <option>Kiyovu</option>
+            <option>Muhima</option>
+            <option>Nyarutarama</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control mb-2 mr-sm-2" id="street" placeholder="Enter street info...">
+        </div>
 
-    <div class="form-check">
-      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
-      <label class="form-check-label" for="exampleRadios1">
-        Deliver
-      </label>
-    </div>
-    <div class="form-check">
-      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-      <label class="form-check-label" for="exampleRadios2">
-        Pick up
-      </label><br>
-      <h6>Choose your location</h6>
-      <div class="form-check form-check-inline">
-        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-        <label class="form-check-label" for="inlineCheckbox1">Gasabo</label>
-      </div>
-      <div class="form-check form-check-inline">
-        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-        <label class="form-check-label" for="inlineCheckbox2">Kicukiro</label>
-      </div>
-      <div class="form-check form-check-inline">
-        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-        <label class="form-check-label" for="inlineCheckbox2">Nyarugenge</label>
-      </div>
-      <div>
-        <label class="labelE">
-          <textarea class="textarea" rows="4" cols="50">
-type your location here...
-                    </textarea>
-      </div>
+        <input type="text" id="additional" name="additionalinformation" placeholder="Any additional specifications...">
       </form>
-
-      <div>
-        <button type="submit" class="btn btn-danger" onclick="submit();">Order</button>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+        <label class="form-check-label" for="exampleRadios1">
+          Deliver
+        </label>
       </div>
-
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+        <label class="form-check-label" for="exampleRadios2">
+          Pick up
+      </div>
+      <button onclick="myFunction()">Order Now</button>
     </div>
-  
+  </div>
+  </div>
+
+
+  <script src="js/index.js"></script>
 </body>
 
 </html>
