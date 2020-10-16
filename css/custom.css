@@ -1,5 +1,6 @@
 body{
     padding-top: 10%;
+    padding-bottom: 5%;
     background: url('../images/bread1.jpg') no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
