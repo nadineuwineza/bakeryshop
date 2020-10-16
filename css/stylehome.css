@@ -1,16 +1,14 @@
 .welcome{
   background-image: url("../images/welcome.jpg");
-  height: 720px;
+  height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
   position: relative;
 }
-
 .highlight{
   color: #df6c0e;
 }
-
 .navbar-brand{
   font-weight: bold;
 }
