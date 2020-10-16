@@ -5,24 +5,66 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="/custom.html">
+  <title>Bakery: Order form</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="/css/custom.css">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <div class="form">
+  <nav class="navbar navbar-toggleable-md fixed-top navbar-light bg-faded" id="header">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#"><span class="highlight">DHEAN</span> Bakery</a>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html"><span class="highlight">HOME</span> <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="menu.html"><span class="highlight">MENU</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#"><span class="highlight">Contact us</span></a>
+        </li>
+        <li class="nav-item">
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart">Cart (<span class="total-count"></span>)</button><button class="clear-cart btn btn-danger">Clear Cart</button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
     <div class="customer">
-    <h2>Customer Information</h2>
+    <h2>order form</h2>
   </div>
-    <label for="fname">Your names</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your names...">
-      <input type="text" id="phone" name="phonenumber" placeholder="Your phone number...">
-    <h3>Select your location</h3>
-    <div id="deliver">
-      <form class="form-inline">
+  <form id="order-form">
+          <div class="form-group row">
+        <label for="client-name" class="col-2 col-form-label">Your name:</label>
+        <div class="col-10">
+          <input class="form-control" type="text" value="" id="client-name">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="example-tel-input" class="col-2 col-form-label">Telephone</label>
+        <div class="col-10">
+          <input class="form-control" type="tel" value="" id="client-tel">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="textareaadditionalinfo">Any additional specifications:</label>
+        <textarea class="form-control" id="textareaadditionalinfo" rows="3"></textarea>
+      </div>
+      <div class="form-check">
+        <label class="form-check-label">
+          <input type="checkbox" class="form-check-input" id="deliver-check">
+          deliver
+        </label>
+      </div>
+      <div id="deliver" style="display: none;">
+      <h3>Select your location</h3>
         <div class="form-group">
           <select class="form-control mb-2 mr-sm-2" id="area">
             <option selected>Select you area...</option>
@@ -49,26 +91,36 @@
         <div class="form-group">
           <input type="text" class="form-control mb-2 mr-sm-2" id="street" placeholder="Enter street info...">
         </div>
-
-        <input type="text" id="additional" name="additionalinformation" placeholder="Any additional specifications...">
+      </div>
+      <div>price: $<span class="total-cart"></span></div>
+      <button type="submit" onclick="myFunction()">Order Now</button>
       </form>
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
-        <label class="form-check-label" for="exampleRadios1">
-          Deliver
-        </label>
+    </div>
+
+    <!-- Modal -->
+<div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
       </div>
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-        <label class="form-check-label" for="exampleRadios2">
-          Pick up
+      <div class="modal-body">
+        <table class="show-cart table">
+          
+        </table>
+        <div>Total price: $<span class="total-cart"></span></div>
       </div>
-      <button onclick="myFunction()">Order Now</button>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <a type="button" href="custom.html" class="btn btn-primary">Order now</a>
+      </div>
     </div>
   </div>
-  </div>
-
-
+</div>
+<script src="js/scripts.js"></script>
   <script src="js/index.js"></script>
 </body>
 

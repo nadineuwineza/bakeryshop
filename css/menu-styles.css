@@ -47,10 +47,6 @@ body{
   color: #ffffff;
   font-weight: bold;
  }
-
-#header > div {
-  float:left;
-}
 body {
   padding-top: 15%;
   padding-left: 15%;
@@ -63,4 +59,7 @@ body {
 }
 .link-items{
   float: right;
+}
+.navbarNav>a{
+  color: #df6c0e;
 }
