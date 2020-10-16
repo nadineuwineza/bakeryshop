@@ -6,3 +6,13 @@ body{
     background-image: url('/images/background.jpg');
     background-size: cover;
 }
+.form-group{
+padding-top: 3px;
+padding-bottom: 5px;
+}
+#fname{
+    /* padding-bottom: 100px;
+    padding-right: 100px; */
+}
+
+
