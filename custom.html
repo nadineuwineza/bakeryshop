@@ -9,17 +9,17 @@
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="/custom.html">
   <link rel="stylesheet" href="/css/custom.css">
-  <link rel="stylesheet" href="/js/index.js">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <div class="form">
-    <h2>Choose the quantity</h2>
+    <h2>Customer Information</h2>
     <label for="fname">Your names</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
-    <h5>Select your location</h5>
+    <input type="text" id="fname" name="firstname" placeholder="Your names...">
+      <input type="text" id="phone" name="phonenumber" placeholder="Your phone number...">
+    <h3>Select your location</h3>
     <div id="deliver">
-      <h5>Enter your location:</h5>
       <form class="form-inline">
         <div class="form-group">
           <select class="form-control mb-2 mr-sm-2" id="area">
@@ -48,39 +48,25 @@
           <input type="text" class="form-control mb-2 mr-sm-2" id="street" placeholder="Enter street info...">
         </div>
 
-
-        <input type="text" id="additional" name="additionalinformation" placeholder="Any additional specification...">
+        <input type="text" id="additional" name="additionalinformation" placeholder="Any additional specifications...">
       </form>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+        <label class="form-check-label" for="exampleRadios1">
+          Deliver
+        </label>
+      </div>
       <div class="form-check">
         <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
         <label class="form-check-label" for="exampleRadios2">
           Pick up
-        </label>
-
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
-          <label class="form-check-label" for="exampleRadios1">
-            Deliver
-          </label>
-        </div>
-
-        <div id="deli-hide" class="col-md-10" style="display: none;">
-          <div class="form-group row">
-            <label class="form-check-label" for="deliver-check">
-              delivery for 10$
-            </label>
-            <div class="col-md-10">
-              <input type="text" class="form-control mb-2 mr-sm-2" id="street" placeholder="Enter adress with street..">
-            </div>
-          </div>
-        </div>
       </div>
-      <button type="submit" class="btn btn-dark">Order now</button>
+      <button onclick="myFunction()">Order Now</button>
     </div>
   </div>
   </div>
 
-
+  <script src="js/index.js"></script>
 </body>
 
 </html>

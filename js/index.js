@@ -1,11 +1,17 @@
-$(document).ready(function(){
-    $("#deliver-check").click(function () {
-        if ($(this).is(":checked")) {
-            $("#deliver").show();
-            sumTotal= sumTotal+10;
-        } else {
-            $("#deliver").hide();
-            sumTotal=sumTotal-10;
-        }
-    });
-});
+// $(document).ready(function(){
+//     $(".btn btn-dark").click(function () {
+//         alert('Thank you!')
+//     });
+// });
+
+
+function myFunction() {
+  var text;
+  if (confirm("Thank you for contacting us! ")) {
+    text = "Thank you for contacting us!";
+  } 
+//   else {
+//     txt = "You pressed Cancel!";
+//   }
+  document.getElementById("demo").innerHTML = text;
+}

@@ -1,18 +1,36 @@
 body{
     background-color: bisque;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 .form{
     padding-left: 30px;
     background-image: url('/images/background.jpg');
     background-size: cover;
 }
+.form ::placeholder{
+    color: black;
+}
 .form-group{
-padding-top: 3px;
 padding-bottom: 5px;
 }
-#fname{
-    /* padding-bottom: 100px;
-    padding-right: 100px; */
+#additional{
+    padding-right: 80px;
+    padding-bottom: 50px;
+    background: transparent;
 }
-
+#phone{
+    display: block;
+    margin-left: 64px;
+    margin-top: 5px;
+    background: transparent;
+}
+#fname{
+    background: transparent;
+}
+#street{
+    background: transparent;
+}
+#area{
+    background: transparent;
+}
 
